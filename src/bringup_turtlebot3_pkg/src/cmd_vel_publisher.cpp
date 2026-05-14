@@ -4,6 +4,8 @@
 #include <string>
 #include <math.h>
 
+#include <csignal> //interruptions
+
 #include "rclcpp/rclcpp.hpp"
 #include "geometry_msgs/msg/twist.hpp"
 #include <nav_msgs/msg/odometry.hpp>
@@ -25,6 +27,20 @@ class CmdVelPublisher : public rclcpp::Node
       std::chrono::milliseconds(100), std::bind(&CmdVelPublisher::cmd_vel_callback, this));
     }
 
+    void stop_to_cmd_vel(){
+
+    geometry_msgs::msg::Twist stop_msg;
+    stop_msg.linear.x = 0.0;
+    stop_msg.angular.z = 0.0;
+  
+    cmd_vel_publisher->publish(stop_msg);
+    
+    RCLCPP_INFO(this->get_logger(),"Stop command sent");
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    }
+
+
+
   private:
     void cmd_vel_callback()
     {
@@ -34,7 +50,7 @@ class CmdVelPublisher : public rclcpp::Node
     		double t=time.seconds();
     		(void)t; // This is to avoid a warning when the code is empty
     		cmd_vel_msg.linear.x=0.0;
-    		cmd_vel_msg.angular.z=0.0;
+    		cmd_vel_msg.angular.z=0.2;
     		cmd_vel_publisher->publish(cmd_vel_msg);
     }
 
@@ -47,10 +63,27 @@ class CmdVelPublisher : public rclcpp::Node
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_subscriber;
 };
 
-int main(int argc, char * argv[])
-{
-  rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<CmdVelPublisher>());
-  rclcpp::shutdown();
-  return 0;
+
+std::shared_ptr<CmdVelPublisher> node = nullptr;
+
+void signal_handler(int signum) {
+
+    if (rclcpp::ok()) {
+        node->stop_to_cmd_vel();
+    }
+    rclcpp::shutdown();
+    exit(signum);
+}
+
+int main(int argc, char *argv[]){
+
+    rclcpp::init(argc,argv);
+
+    node = std::make_shared<CmdVelPublisher>();
+
+    std::signal(SIGINT, signal_handler);
+
+    rclcpp::spin(node);
+
+    return 0;
 }
