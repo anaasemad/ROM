@@ -1,0 +1,16 @@
+/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/lib/maintenance_mode_pkg/maintenance_mode
+/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/ament_index/resource_index/package_run_dependencies/maintenance_mode_pkg
+/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/ament_index/resource_index/parent_prefix_path/maintenance_mode_pkg
+/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/environment/ament_prefix_path.sh
+/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/environment/ament_prefix_path.dsv
+/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/environment/path.sh
+/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/environment/path.dsv
+/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/local_setup.bash
+/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/local_setup.sh
+/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/local_setup.zsh
+/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/local_setup.dsv
+/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/package.dsv
+/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/ament_index/resource_index/packages/maintenance_mode_pkg
+/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/cmake/maintenance_mode_pkgConfig.cmake
+/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/cmake/maintenance_mode_pkgConfig-version.cmake
+/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/package.xml

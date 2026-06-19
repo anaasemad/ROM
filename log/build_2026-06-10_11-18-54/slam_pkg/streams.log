@@ -1,0 +1,70 @@
+[0.045s] Invoking command in '/home/anaase_linux/RM_prac/build/slam_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake /home/anaase_linux/RM_prac/src/slam_pkg -DCMAKE_INSTALL_PREFIX=/home/anaase_linux/RM_prac/install/slam_pkg
+[0.277s] -- The C compiler identification is GNU 11.4.0
+[0.694s] -- The CXX compiler identification is GNU 11.4.0
+[0.855s] -- Detecting C compiler ABI info
+[0.974s] -- Detecting C compiler ABI info - done
+[0.978s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.979s] -- Detecting C compile features
+[0.980s] -- Detecting C compile features - done
+[0.983s] -- Detecting CXX compiler ABI info
+[1.127s] -- Detecting CXX compiler ABI info - done
+[1.131s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.131s] -- Detecting CXX compile features
+[1.132s] -- Detecting CXX compile features - done
+[1.145s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.311s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.410s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[1.590s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.597s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.609s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.634s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.658s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.722s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.728s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.350s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.949s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.839s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.851s] -- Looking for pthread.h
+[3.971s] -- Looking for pthread.h - found
+[3.971s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.063s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.064s] -- Found Threads: TRUE  
+[4.126s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[4.155s] -- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)
+[4.165s] -- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[4.207s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[4.209s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.209s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.315s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[4.384s] -- Configuring done
+[4.395s] -- Generating done
+[4.398s] -- Build files have been written to: /home/anaase_linux/RM_prac/build/slam_pkg
+[4.407s] Invoked command in '/home/anaase_linux/RM_prac/build/slam_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake /home/anaase_linux/RM_prac/src/slam_pkg -DCMAKE_INSTALL_PREFIX=/home/anaase_linux/RM_prac/install/slam_pkg
+[4.408s] Invoking command in '/home/anaase_linux/RM_prac/build/slam_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/slam_pkg -- -j22 -l22
+[4.441s] [ 50%] [32mBuilding CXX object CMakeFiles/amcl_odom.dir/src/amcl_odom.cpp.o[0m
+[17.867s] [100%] [32m[1mLinking CXX executable amcl_odom[0m
+[18.389s] [100%] Built target amcl_odom
+[18.405s] Invoked command in '/home/anaase_linux/RM_prac/build/slam_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/slam_pkg -- -j22 -l22
+[18.408s] Invoking command in '/home/anaase_linux/RM_prac/build/slam_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/slam_pkg
+[18.414s] -- Install configuration: ""
+[18.415s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/lib/slam_pkg/amcl_odom
+[18.418s] -- Set runtime path of "/home/anaase_linux/RM_prac/install/slam_pkg/lib/slam_pkg/amcl_odom" to ""
+[18.418s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/launch
+[18.419s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/launch/cartographer.launch.py
+[18.419s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/launch/localization.launch.py
+[18.420s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/ament_index/resource_index/package_run_dependencies/slam_pkg
+[18.421s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/ament_index/resource_index/parent_prefix_path/slam_pkg
+[18.421s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/environment/ament_prefix_path.sh
+[18.421s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/environment/ament_prefix_path.dsv
+[18.422s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/environment/path.sh
+[18.422s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/environment/path.dsv
+[18.422s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/local_setup.bash
+[18.422s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/local_setup.sh
+[18.422s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/local_setup.zsh
+[18.422s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/local_setup.dsv
+[18.422s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/package.dsv
+[18.423s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/ament_index/resource_index/packages/slam_pkg
+[18.423s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/cmake/slam_pkgConfig.cmake
+[18.424s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/cmake/slam_pkgConfig-version.cmake
+[18.424s] -- Installing: /home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/package.xml
+[18.426s] Invoked command in '/home/anaase_linux/RM_prac/build/slam_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/slam_pkg

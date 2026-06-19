@@ -1,0 +1,49 @@
+[0.043s] Invoking command in '/home/anaase_linux/RM_prac/build/navigation_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake /home/anaase_linux/RM_prac/src/navigation_pkg -DCMAKE_INSTALL_PREFIX=/home/anaase_linux/RM_prac/install/navigation_pkg
+[0.287s] -- The C compiler identification is GNU 11.4.0
+[0.701s] -- The CXX compiler identification is GNU 11.4.0
+[1.058s] -- Detecting C compiler ABI info
+[1.177s] -- Detecting C compiler ABI info - done
+[1.183s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.183s] -- Detecting C compile features
+[1.184s] -- Detecting C compile features - done
+[1.187s] -- Detecting CXX compiler ABI info
+[1.359s] -- Detecting CXX compiler ABI info - done
+[1.366s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.367s] -- Detecting CXX compile features
+[1.367s] -- Detecting CXX compile features - done
+[1.369s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.482s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.594s] -- Configuring done
+[1.596s] -- Generating done
+[1.597s] -- Build files have been written to: /home/anaase_linux/RM_prac/build/navigation_pkg
+[1.602s] Invoked command in '/home/anaase_linux/RM_prac/build/navigation_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake /home/anaase_linux/RM_prac/src/navigation_pkg -DCMAKE_INSTALL_PREFIX=/home/anaase_linux/RM_prac/install/navigation_pkg
+[1.603s] Invoking command in '/home/anaase_linux/RM_prac/build/navigation_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/navigation_pkg -- -j22 -l22
+[1.632s] Invoked command in '/home/anaase_linux/RM_prac/build/navigation_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/navigation_pkg -- -j22 -l22
+[1.633s] Invoking command in '/home/anaase_linux/RM_prac/build/navigation_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/navigation_pkg
+[1.638s] -- Install configuration: ""
+[1.638s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/launch
+[1.639s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/launch/speed_limit.launch.py
+[1.639s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/launch/turtlebot3_navigation.launch.py
+[1.640s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/launch/navigation_with_speed_limit.launch.py
+[1.640s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/launch/navigation.launch.py
+[1.640s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/param
+[1.641s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/param/speed_params.yaml
+[1.641s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/param/keepout_params.yaml
+[1.641s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/param/nav2_params_speed_limit.yaml
+[1.642s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/param/nav2_params.yaml
+[1.643s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/ament_index/resource_index/package_run_dependencies/navigation_pkg
+[1.643s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/ament_index/resource_index/parent_prefix_path/navigation_pkg
+[1.643s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/environment/ament_prefix_path.sh
+[1.644s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/environment/ament_prefix_path.dsv
+[1.644s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/environment/path.sh
+[1.644s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/environment/path.dsv
+[1.644s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/local_setup.bash
+[1.644s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/local_setup.sh
+[1.644s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/local_setup.zsh
+[1.644s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/local_setup.dsv
+[1.644s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/package.dsv
+[1.645s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/ament_index/resource_index/packages/navigation_pkg
+[1.645s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/cmake/navigation_pkgConfig.cmake
+[1.645s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/cmake/navigation_pkgConfig-version.cmake
+[1.645s] -- Installing: /home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/package.xml
+[1.648s] Invoked command in '/home/anaase_linux/RM_prac/build/navigation_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/navigation_pkg

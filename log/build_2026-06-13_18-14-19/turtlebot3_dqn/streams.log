@@ -1,0 +1,30 @@
+[0.590s] Invoking command in '/home/anaase_linux/RM_prac/src/turtlebot3_dqn': PYTHONPATH=/home/anaase_linux/RM_prac/build/turtlebot3_dqn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_dqn build --build-base /home/anaase_linux/RM_prac/build/turtlebot3_dqn/build install --record /home/anaase_linux/RM_prac/build/turtlebot3_dqn/install.log --single-version-externally-managed install_data
+[0.736s] running egg_info
+[0.736s] writing ../../build/turtlebot3_dqn/turtlebot3_dqn.egg-info/PKG-INFO
+[0.737s] writing dependency_links to ../../build/turtlebot3_dqn/turtlebot3_dqn.egg-info/dependency_links.txt
+[0.737s] writing entry points to ../../build/turtlebot3_dqn/turtlebot3_dqn.egg-info/entry_points.txt
+[0.737s] writing requirements to ../../build/turtlebot3_dqn/turtlebot3_dqn.egg-info/requires.txt
+[0.737s] writing top-level names to ../../build/turtlebot3_dqn/turtlebot3_dqn.egg-info/top_level.txt
+[0.738s] reading manifest file '../../build/turtlebot3_dqn/turtlebot3_dqn.egg-info/SOURCES.txt'
+[0.739s] writing manifest file '../../build/turtlebot3_dqn/turtlebot3_dqn.egg-info/SOURCES.txt'
+[0.739s] running build
+[0.739s] running build_py
+[0.739s] copying turtlebot3_dqn/dqn_environment.py -> /home/anaase_linux/RM_prac/build/turtlebot3_dqn/build/lib/turtlebot3_dqn
+[0.739s] running install
+[0.739s] running install_lib
+[0.740s] copying /home/anaase_linux/RM_prac/build/turtlebot3_dqn/build/lib/turtlebot3_dqn/dqn_environment.py -> /home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/python3.10/site-packages/turtlebot3_dqn
+[0.741s] byte-compiling /home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/python3.10/site-packages/turtlebot3_dqn/dqn_environment.py to dqn_environment.cpython-310.pyc
+[0.742s] running install_data
+[0.742s] running install_egg_info
+[0.744s] removing '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/python3.10/site-packages/turtlebot3_dqn-1.0.3-py3.10.egg-info' (and everything under it)
+[0.744s] Copying ../../build/turtlebot3_dqn/turtlebot3_dqn.egg-info to /home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/python3.10/site-packages/turtlebot3_dqn-1.0.3-py3.10.egg-info
+[0.745s] running install_scripts
+[0.760s] Installing action_graph script to /home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/turtlebot3_dqn
+[0.760s] Installing dqn_agent script to /home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/turtlebot3_dqn
+[0.760s] Installing dqn_coppeliasim script to /home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/turtlebot3_dqn
+[0.761s] Installing dqn_environment script to /home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/turtlebot3_dqn
+[0.761s] Installing dqn_gazebo script to /home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/turtlebot3_dqn
+[0.761s] Installing dqn_test script to /home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/turtlebot3_dqn
+[0.761s] Installing result_graph script to /home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/turtlebot3_dqn
+[0.761s] writing list of installed files to '/home/anaase_linux/RM_prac/build/turtlebot3_dqn/install.log'
+[0.785s] Invoked command in '/home/anaase_linux/RM_prac/src/turtlebot3_dqn' returned '0': PYTHONPATH=/home/anaase_linux/RM_prac/build/turtlebot3_dqn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_dqn build --build-base /home/anaase_linux/RM_prac/build/turtlebot3_dqn/build install --record /home/anaase_linux/RM_prac/build/turtlebot3_dqn/install.log --single-version-externally-managed install_data

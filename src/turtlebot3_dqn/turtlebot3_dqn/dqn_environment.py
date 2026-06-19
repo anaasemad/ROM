@@ -121,23 +121,15 @@ class RLEnvironment(Node):
         )
 
     def make_environment_callback(self, request, response):
-        self.get_logger().info('Make environment called')
-        while not self.initialize_environment_client.wait_for_service(timeout_sec=1.0):
-            self.get_logger().warn(
-                'service for initialize the environment is not available, waiting ...'
-            )
-        future = self.initialize_environment_client.call_async(Goal.Request())
-        rclpy.spin_until_future_complete(self, future)
-        response_goal = future.result()
-        if not response_goal.success:
-            self.get_logger().error('initialize environment request failed')
-        else:
-            self.goal_pose_x = response_goal.pose_x
-            self.goal_pose_y = response_goal.pose_y
-            self.get_logger().info(
-                'goal initialized at [%f, %f]' % (self.goal_pose_x, self.goal_pose_y)
-            )
-
+        self.get_logger().info('Make environment called - Forzando Parking Fijo')
+        
+        # Nos saltamos la llamada externa que bloquea el nodo
+        self.goal_pose_x = -2.125
+        self.goal_pose_y = -1.725
+        
+        self.get_logger().info(
+            'goal initialized at [%f, %f]' % (self.goal_pose_x, self.goal_pose_y)
+        )
         return response
 
     def reset_environment_callback(self, request, response):
@@ -227,13 +219,14 @@ class RLEnvironment(Node):
 
     def calculate_state(self):
         state = []
+        orientation_error=abs(self.goal_angle)
         state.append(float(self.goal_distance))
         state.append(float(self.goal_angle))
         for var in self.front_ranges:
             state.append(float(var))
         self.local_step += 1
 
-        if self.goal_distance < 0.20:
+        if (self.goal_distance < 0.20 and orientation_error <0.2):
             self.get_logger().info('Goal Reached')
             self.succeed = True
             self.done = True
@@ -306,9 +299,29 @@ class RLEnvironment(Node):
     def calculate_reward(self):
         yaw_reward = 1 - (2 * abs(self.goal_angle) / math.pi)
         obstacle_reward = self.compute_weighted_obstacle_reward()
+        orientation_reward = 1 - abs(self.goal_angle) / math.pi
+        # Premio por acercarse a la plaza
+        distance_reward = (
+            self.prev_goal_distance - self.goal_distance) * 10.0
 
-        print('directional_reward: %f, obstacle_reward: %f' % (yaw_reward, obstacle_reward))
-        reward = yaw_reward + obstacle_reward
+        # Guardar distancia actual para la siguiente iteración
+        self.prev_goal_distance = self.goal_distance
+        
+        #Penalización temporal
+        time_penalty= -0.01
+
+        reward = (
+            yaw_reward
+            + obstacle_reward
+            + distance_reward
+            + 0.5 * orientation_reward
+            + time_penalty
+        )
+        
+        print(
+            f"dist={self.goal_distance:.2f}, "
+            f"reward={reward:.2f}"
+        )
 
         if self.succeed:
             reward = 100.0

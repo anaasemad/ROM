@@ -1,0 +1,5 @@
+  File "/home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/python3.10/site-packages/turtlebot3_dqn/dqn_environment.py", line 135
+    self.goal_pose_x =  
+                        ^
+SyntaxError: invalid syntax
+

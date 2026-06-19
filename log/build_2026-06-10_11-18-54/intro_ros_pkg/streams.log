@@ -1,0 +1,83 @@
+[0.046s] Invoking command in '/home/anaase_linux/RM_prac/build/intro_ros_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake /home/anaase_linux/RM_prac/src/intro_ros_pkg -DCMAKE_INSTALL_PREFIX=/home/anaase_linux/RM_prac/install/intro_ros_pkg
+[0.293s] -- The C compiler identification is GNU 11.4.0
+[0.752s] -- The CXX compiler identification is GNU 11.4.0
+[1.090s] -- Detecting C compiler ABI info
+[1.212s] -- Detecting C compiler ABI info - done
+[1.218s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.218s] -- Detecting C compile features
+[1.219s] -- Detecting C compile features - done
+[1.221s] -- Detecting CXX compiler ABI info
+[1.391s] -- Detecting CXX compiler ABI info - done
+[1.398s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.398s] -- Detecting CXX compile features
+[1.398s] -- Detecting CXX compile features - done
+[1.400s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.518s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.583s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[1.755s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.759s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.766s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.777s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.788s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.816s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.817s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.586s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.164s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.133s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.138s] -- Looking for pthread.h
+[4.245s] -- Looking for pthread.h - found
+[4.246s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.339s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.340s] -- Found Threads: TRUE  
+[4.374s] -- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[4.421s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[4.422s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.422s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.485s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.542s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.542s] -- Configured cppcheck include dirs: 
+[4.542s] -- Configured cppcheck exclude dirs and/or files: 
+[4.543s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.544s] -- Added test 'lint_cmake' to check CMake code style
+[4.544s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.545s] -- Added test 'uncrustify' to check C / C++ code style
+[4.545s] -- Configured uncrustify additional arguments: 
+[4.545s] -- Added test 'xmllint' to check XML markup files
+[4.546s] -- Configuring done
+[4.559s] -- Generating done
+[4.564s] -- Build files have been written to: /home/anaase_linux/RM_prac/build/intro_ros_pkg
+[4.575s] Invoked command in '/home/anaase_linux/RM_prac/build/intro_ros_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake /home/anaase_linux/RM_prac/src/intro_ros_pkg -DCMAKE_INSTALL_PREFIX=/home/anaase_linux/RM_prac/install/intro_ros_pkg
+[4.575s] Invoking command in '/home/anaase_linux/RM_prac/build/intro_ros_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/intro_ros_pkg -- -j22 -l22
+[4.611s] [ 25%] [32mBuilding CXX object CMakeFiles/subscriber.dir/src/subscriber_node.cpp.o[0m
+[4.611s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher_node.cpp.o[0m
+[10.424s] [ 75%] [32m[1mLinking CXX executable publisher[0m
+[10.772s] [ 75%] Built target publisher
+[15.630s] [100%] [32m[1mLinking CXX executable subscriber[0m
+[16.217s] [100%] Built target subscriber
+[16.305s] Invoked command in '/home/anaase_linux/RM_prac/build/intro_ros_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/intro_ros_pkg -- -j22 -l22
+[16.325s] Invoking command in '/home/anaase_linux/RM_prac/build/intro_ros_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/intro_ros_pkg
+[16.345s] -- Install configuration: ""
+[16.346s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/lib/intro_ros_pkg/publisher
+[16.350s] -- Set runtime path of "/home/anaase_linux/RM_prac/install/intro_ros_pkg/lib/intro_ros_pkg/publisher" to ""
+[16.350s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/lib/intro_ros_pkg/subscriber
+[16.353s] -- Set runtime path of "/home/anaase_linux/RM_prac/install/intro_ros_pkg/lib/intro_ros_pkg/subscriber" to ""
+[16.353s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg//launch
+[16.354s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg//launch/intro_ros.launch.py
+[16.355s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg//launch/intro_ros_param.launch.py
+[16.355s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg//launch/intro_ros_remap.launch.py
+[16.356s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/ament_index/resource_index/package_run_dependencies/intro_ros_pkg
+[16.357s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/ament_index/resource_index/parent_prefix_path/intro_ros_pkg
+[16.357s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/environment/ament_prefix_path.sh
+[16.357s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/environment/ament_prefix_path.dsv
+[16.357s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/environment/path.sh
+[16.358s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/environment/path.dsv
+[16.358s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/local_setup.bash
+[16.358s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/local_setup.sh
+[16.358s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/local_setup.zsh
+[16.358s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/local_setup.dsv
+[16.359s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/package.dsv
+[16.359s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/ament_index/resource_index/packages/intro_ros_pkg
+[16.359s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/cmake/intro_ros_pkgConfig.cmake
+[16.359s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/cmake/intro_ros_pkgConfig-version.cmake
+[16.359s] -- Installing: /home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/package.xml
+[16.365s] Invoked command in '/home/anaase_linux/RM_prac/build/intro_ros_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/intro_ros_pkg

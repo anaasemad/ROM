@@ -1,0 +1,74 @@
+[0.042s] Invoking command in '/home/anaase_linux/RM_prac/build/transformations_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake /home/anaase_linux/RM_prac/src/transformations_pkg -DCMAKE_INSTALL_PREFIX=/home/anaase_linux/RM_prac/install/transformations_pkg
+[0.271s] -- The C compiler identification is GNU 11.4.0
+[0.703s] -- The CXX compiler identification is GNU 11.4.0
+[0.851s] -- Detecting C compiler ABI info
+[0.971s] -- Detecting C compiler ABI info - done
+[0.975s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.975s] -- Detecting C compile features
+[0.976s] -- Detecting C compile features - done
+[0.979s] -- Detecting CXX compiler ABI info
+[1.118s] -- Detecting CXX compiler ABI info - done
+[1.126s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.126s] -- Detecting CXX compile features
+[1.127s] -- Detecting CXX compile features - done
+[1.141s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.292s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.406s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[1.586s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.593s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.606s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.630s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.654s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.719s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.724s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.346s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.944s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.101s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.106s] -- Looking for pthread.h
+[4.203s] -- Looking for pthread.h - found
+[4.203s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.316s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.317s] -- Found Threads: TRUE  
+[4.351s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[4.363s] -- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)
+[4.368s] -- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[4.412s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[4.413s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.413s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.475s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.534s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.535s] -- Configured cppcheck include dirs: 
+[4.535s] -- Configured cppcheck exclude dirs and/or files: 
+[4.535s] -- Added test 'lint_cmake' to check CMake code style
+[4.535s] -- Added test 'uncrustify' to check C / C++ code style
+[4.536s] -- Configured uncrustify additional arguments: 
+[4.536s] -- Added test 'xmllint' to check XML markup files
+[4.537s] -- Configuring done
+[4.546s] -- Generating done
+[4.549s] -- Build files have been written to: /home/anaase_linux/RM_prac/build/transformations_pkg
+[4.558s] Invoked command in '/home/anaase_linux/RM_prac/build/transformations_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake /home/anaase_linux/RM_prac/src/transformations_pkg -DCMAKE_INSTALL_PREFIX=/home/anaase_linux/RM_prac/install/transformations_pkg
+[4.560s] Invoking command in '/home/anaase_linux/RM_prac/build/transformations_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/transformations_pkg -- -j22 -l22
+[4.595s] [ 50%] [32mBuilding CXX object CMakeFiles/transform_listener.dir/src/transform_listener.cpp.o[0m
+[16.054s] [100%] [32m[1mLinking CXX executable transform_listener[0m
+[16.607s] [100%] Built target transform_listener
+[16.625s] Invoked command in '/home/anaase_linux/RM_prac/build/transformations_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/transformations_pkg -- -j22 -l22
+[16.629s] Invoking command in '/home/anaase_linux/RM_prac/build/transformations_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/transformations_pkg
+[16.634s] -- Install configuration: ""
+[16.634s] -- Installing: /home/anaase_linux/RM_prac/install/transformations_pkg/lib/transformations_pkg/transform_listener
+[16.637s] -- Set runtime path of "/home/anaase_linux/RM_prac/install/transformations_pkg/lib/transformations_pkg/transform_listener" to ""
+[16.637s] -- Installing: /home/anaase_linux/RM_prac/install/transformations_pkg/share/ament_index/resource_index/package_run_dependencies/transformations_pkg
+[16.638s] -- Installing: /home/anaase_linux/RM_prac/install/transformations_pkg/share/ament_index/resource_index/parent_prefix_path/transformations_pkg
+[16.638s] -- Installing: /home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/environment/ament_prefix_path.sh
+[16.638s] -- Installing: /home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/environment/ament_prefix_path.dsv
+[16.639s] -- Installing: /home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/environment/path.sh
+[16.639s] -- Installing: /home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/environment/path.dsv
+[16.639s] -- Installing: /home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/local_setup.bash
+[16.639s] -- Installing: /home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/local_setup.sh
+[16.639s] -- Installing: /home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/local_setup.zsh
+[16.639s] -- Installing: /home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/local_setup.dsv
+[16.640s] -- Installing: /home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/package.dsv
+[16.640s] -- Installing: /home/anaase_linux/RM_prac/install/transformations_pkg/share/ament_index/resource_index/packages/transformations_pkg
+[16.640s] -- Installing: /home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/cmake/transformations_pkgConfig.cmake
+[16.640s] -- Installing: /home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/cmake/transformations_pkgConfig-version.cmake
+[16.641s] -- Installing: /home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/package.xml
+[16.643s] Invoked command in '/home/anaase_linux/RM_prac/build/transformations_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/transformations_pkg

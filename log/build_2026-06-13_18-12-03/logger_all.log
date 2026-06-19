@@ -1,0 +1,860 @@
+[0.149s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.149s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=22, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7b97d7556cb0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b97d7657c10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b97d7657c10>>, mixin_verb=('build',))
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.253s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/anaase_linux/RM_prac'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup_turtlebot3_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup_turtlebot3_pkg) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup_turtlebot3_pkg) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup_turtlebot3_pkg) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup_turtlebot3_pkg) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup_turtlebot3_pkg) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup_turtlebot3_pkg) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup_turtlebot3_pkg) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/bringup_turtlebot3_pkg) by extension 'ros'
+[0.263s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bringup_turtlebot3_pkg' with type 'ros.ament_cmake' and name 'bringup_turtlebot3_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/intro_ros_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/intro_ros_pkg) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/intro_ros_pkg) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/intro_ros_pkg) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/intro_ros_pkg) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/intro_ros_pkg) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/intro_ros_pkg) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/intro_ros_pkg) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/intro_ros_pkg) by extension 'ros'
+[0.264s] DEBUG:colcon.colcon_core.package_identification:Package 'src/intro_ros_pkg' with type 'ros.ament_cmake' and name 'intro_ros_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematic_control_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematic_control_pkg) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematic_control_pkg) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematic_control_pkg) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematic_control_pkg) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematic_control_pkg) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematic_control_pkg) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematic_control_pkg) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/kinematic_control_pkg) by extension 'ros'
+[0.265s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kinematic_control_pkg' with type 'ros.ament_cmake' and name 'kinematic_control_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/maintenance_mode_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/maintenance_mode_pkg) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/maintenance_mode_pkg) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/maintenance_mode_pkg) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/maintenance_mode_pkg) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/maintenance_mode_pkg) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/maintenance_mode_pkg) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/maintenance_mode_pkg) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/maintenance_mode_pkg) by extension 'ros'
+[0.265s] DEBUG:colcon.colcon_core.package_identification:Package 'src/maintenance_mode_pkg' with type 'ros.ament_cmake' and name 'maintenance_mode_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_pkg) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_pkg) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_pkg) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_pkg) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_pkg) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_pkg) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_pkg) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/navigation_pkg) by extension 'ros'
+[0.266s] DEBUG:colcon.colcon_core.package_identification:Package 'src/navigation_pkg' with type 'ros.ament_cmake' and name 'navigation_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/proyecto_ROM) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/proyecto_ROM) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/proyecto_ROM) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/proyecto_ROM) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/proyecto_ROM) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/proyecto_ROM) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/proyecto_ROM) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/proyecto_ROM) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/proyecto_ROM) by extension 'ros'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/proyecto_ROM) by extensions ['cmake', 'python']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/proyecto_ROM) by extension 'cmake'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/proyecto_ROM) by extension 'python'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/proyecto_ROM) by extensions ['python_setup_py']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/proyecto_ROM) by extension 'python_setup_py'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit_pkg) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit_pkg) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit_pkg) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit_pkg) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit_pkg) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit_pkg) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit_pkg) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit_pkg) by extension 'ros'
+[0.267s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pure_pursuit_pkg' with type 'ros.ament_cmake' and name 'pure_pursuit_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_vfh) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_vfh) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_vfh) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_vfh) by extensions ['colcon_pkg']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_vfh) by extension 'colcon_pkg'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_vfh) by extensions ['colcon_meta']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_vfh) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_vfh) by extensions ['ros']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_vfh) by extension 'ros'
+[0.268s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_vfh' with type 'ros.ament_cmake' and name 'ros2_vfh'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extension 'colcon_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extensions ['colcon_meta']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extension 'colcon_meta'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extensions ['ros']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extension 'ros'
+[0.269s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam_pkg' with type 'ros.ament_cmake' and name 'slam_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/transformations_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/transformations_pkg) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/transformations_pkg) by extension 'ignore_ament_install'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/transformations_pkg) by extensions ['colcon_pkg']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/transformations_pkg) by extension 'colcon_pkg'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/transformations_pkg) by extensions ['colcon_meta']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/transformations_pkg) by extension 'colcon_meta'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/transformations_pkg) by extensions ['ros']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/transformations_pkg) by extension 'ros'
+[0.270s] DEBUG:colcon.colcon_core.package_identification:Package 'src/transformations_pkg' with type 'ros.ament_cmake' and name 'transformations_pkg'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extension 'ignore'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extension 'ignore_ament_install'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extensions ['colcon_pkg']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extension 'colcon_pkg'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extensions ['colcon_meta']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extension 'colcon_meta'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extensions ['ros']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extension 'ros'
+[0.271s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_coppeliasim' with type 'ros.ament_cmake' and name 'turtlebot3_coppeliasim'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_dqn) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_dqn) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_dqn) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_dqn) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_dqn) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_dqn) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_dqn) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_dqn) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_dqn) by extension 'ros'
+[0.271s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_dqn' with type 'ros.ament_python' and name 'turtlebot3_dqn'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/upv_maps_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/upv_maps_pkg) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/upv_maps_pkg) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/upv_maps_pkg) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/upv_maps_pkg) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/upv_maps_pkg) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/upv_maps_pkg) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/upv_maps_pkg) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/upv_maps_pkg) by extension 'ros'
+[0.272s] DEBUG:colcon.colcon_core.package_identification:Package 'src/upv_maps_pkg' with type 'ros.ament_cmake' and name 'upv_maps_pkg'
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.301s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/anaase_linux/RM_prac/install
+[0.302s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/anaase_linux/sim_ros2_interface/install
+[0.302s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 274 installed packages in /opt/ros/humble
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'bringup_turtlebot3_pkg' build argument 'cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'bringup_turtlebot3_pkg' build argument 'cmake_target' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'bringup_turtlebot3_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'bringup_turtlebot3_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'bringup_turtlebot3_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'bringup_turtlebot3_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'bringup_turtlebot3_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'bringup_turtlebot3_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'bringup_turtlebot3_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.327s] DEBUG:colcon.colcon_core.verb:Building package 'bringup_turtlebot3_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anaase_linux/RM_prac/build/bringup_turtlebot3_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg', 'merge_install': False, 'path': '/home/anaase_linux/RM_prac/src/bringup_turtlebot3_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'intro_ros_pkg' build argument 'cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'intro_ros_pkg' build argument 'cmake_target' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'intro_ros_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'intro_ros_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'intro_ros_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'intro_ros_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'intro_ros_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'intro_ros_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'intro_ros_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.327s] DEBUG:colcon.colcon_core.verb:Building package 'intro_ros_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anaase_linux/RM_prac/build/intro_ros_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anaase_linux/RM_prac/install/intro_ros_pkg', 'merge_install': False, 'path': '/home/anaase_linux/RM_prac/src/intro_ros_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'kinematic_control_pkg' build argument 'cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'kinematic_control_pkg' build argument 'cmake_target' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'kinematic_control_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'kinematic_control_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'kinematic_control_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'kinematic_control_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'kinematic_control_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'kinematic_control_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'kinematic_control_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.327s] DEBUG:colcon.colcon_core.verb:Building package 'kinematic_control_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anaase_linux/RM_prac/build/kinematic_control_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anaase_linux/RM_prac/install/kinematic_control_pkg', 'merge_install': False, 'path': '/home/anaase_linux/RM_prac/src/kinematic_control_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'maintenance_mode_pkg' build argument 'cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'maintenance_mode_pkg' build argument 'cmake_target' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'maintenance_mode_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'maintenance_mode_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'maintenance_mode_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'maintenance_mode_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'maintenance_mode_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'maintenance_mode_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'maintenance_mode_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.328s] DEBUG:colcon.colcon_core.verb:Building package 'maintenance_mode_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anaase_linux/RM_prac/build/maintenance_mode_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg', 'merge_install': False, 'path': '/home/anaase_linux/RM_prac/src/maintenance_mode_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'navigation_pkg' build argument 'cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'navigation_pkg' build argument 'cmake_target' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'navigation_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'navigation_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'navigation_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'navigation_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'navigation_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'navigation_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'navigation_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.328s] DEBUG:colcon.colcon_core.verb:Building package 'navigation_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anaase_linux/RM_prac/build/navigation_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anaase_linux/RM_prac/install/navigation_pkg', 'merge_install': False, 'path': '/home/anaase_linux/RM_prac/src/navigation_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit_pkg' build argument 'cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit_pkg' build argument 'cmake_target' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.328s] DEBUG:colcon.colcon_core.verb:Building package 'pure_pursuit_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anaase_linux/RM_prac/build/pure_pursuit_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg', 'merge_install': False, 'path': '/home/anaase_linux/RM_prac/src/pure_pursuit_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'ros2_vfh' build argument 'cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'ros2_vfh' build argument 'cmake_target' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'ros2_vfh' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'ros2_vfh' build argument 'cmake_clean_cache' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'ros2_vfh' build argument 'cmake_clean_first' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'ros2_vfh' build argument 'cmake_force_configure' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'ros2_vfh' build argument 'ament_cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'ros2_vfh' build argument 'catkin_cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'ros2_vfh' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.328s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_vfh' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anaase_linux/RM_prac/build/ros2_vfh', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anaase_linux/RM_prac/install/ros2_vfh', 'merge_install': False, 'path': '/home/anaase_linux/RM_prac/src/ros2_vfh', 'symlink_install': False, 'test_result_base': None}
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'cmake_target' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.329s] DEBUG:colcon.colcon_core.verb:Building package 'slam_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anaase_linux/RM_prac/build/slam_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anaase_linux/RM_prac/install/slam_pkg', 'merge_install': False, 'path': '/home/anaase_linux/RM_prac/src/slam_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'transformations_pkg' build argument 'cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'transformations_pkg' build argument 'cmake_target' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'transformations_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'transformations_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'transformations_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'transformations_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'transformations_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'transformations_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'transformations_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.329s] DEBUG:colcon.colcon_core.verb:Building package 'transformations_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anaase_linux/RM_prac/build/transformations_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anaase_linux/RM_prac/install/transformations_pkg', 'merge_install': False, 'path': '/home/anaase_linux/RM_prac/src/transformations_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'cmake_target' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'cmake_clean_first' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'cmake_force_configure' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'ament_cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.329s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_coppeliasim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anaase_linux/RM_prac/build/turtlebot3_coppeliasim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim', 'merge_install': False, 'path': '/home/anaase_linux/RM_prac/src/turtlebot3_coppeliasim', 'symlink_install': False, 'test_result_base': None}
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_dqn' build argument 'cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_dqn' build argument 'cmake_target' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_dqn' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_dqn' build argument 'cmake_clean_cache' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_dqn' build argument 'cmake_clean_first' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_dqn' build argument 'cmake_force_configure' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_dqn' build argument 'ament_cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_dqn' build argument 'catkin_cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_dqn' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.329s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_dqn' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anaase_linux/RM_prac/build/turtlebot3_dqn', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anaase_linux/RM_prac/install/turtlebot3_dqn', 'merge_install': False, 'path': '/home/anaase_linux/RM_prac/src/turtlebot3_dqn', 'symlink_install': False, 'test_result_base': None}
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'upv_maps_pkg' build argument 'cmake_args' from command line to 'None'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'upv_maps_pkg' build argument 'cmake_target' from command line to 'None'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'upv_maps_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'upv_maps_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'upv_maps_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'upv_maps_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'upv_maps_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'upv_maps_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'upv_maps_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.330s] DEBUG:colcon.colcon_core.verb:Building package 'upv_maps_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anaase_linux/RM_prac/build/upv_maps_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anaase_linux/RM_prac/install/upv_maps_pkg', 'merge_install': False, 'path': '/home/anaase_linux/RM_prac/src/upv_maps_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.330s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.331s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.331s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anaase_linux/RM_prac/src/bringup_turtlebot3_pkg' with build type 'ament_cmake'
+[0.331s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anaase_linux/RM_prac/src/bringup_turtlebot3_pkg'
+[0.334s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.334s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.334s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.340s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anaase_linux/RM_prac/src/intro_ros_pkg' with build type 'ament_cmake'
+[0.341s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anaase_linux/RM_prac/src/intro_ros_pkg'
+[0.341s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.341s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.345s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anaase_linux/RM_prac/src/kinematic_control_pkg' with build type 'ament_cmake'
+[0.345s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anaase_linux/RM_prac/src/kinematic_control_pkg'
+[0.345s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.345s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.349s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anaase_linux/RM_prac/src/maintenance_mode_pkg' with build type 'ament_cmake'
+[0.349s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anaase_linux/RM_prac/src/maintenance_mode_pkg'
+[0.349s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.349s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.353s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anaase_linux/RM_prac/src/navigation_pkg' with build type 'ament_cmake'
+[0.353s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anaase_linux/RM_prac/src/navigation_pkg'
+[0.354s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.354s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.358s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anaase_linux/RM_prac/src/pure_pursuit_pkg' with build type 'ament_cmake'
+[0.358s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anaase_linux/RM_prac/src/pure_pursuit_pkg'
+[0.358s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.358s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.362s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anaase_linux/RM_prac/src/ros2_vfh' with build type 'ament_cmake'
+[0.362s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anaase_linux/RM_prac/src/ros2_vfh'
+[0.362s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.362s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.365s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anaase_linux/RM_prac/src/slam_pkg' with build type 'ament_cmake'
+[0.366s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anaase_linux/RM_prac/src/slam_pkg'
+[0.366s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.366s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.370s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anaase_linux/RM_prac/src/transformations_pkg' with build type 'ament_cmake'
+[0.371s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anaase_linux/RM_prac/src/transformations_pkg'
+[0.371s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.371s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.374s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anaase_linux/RM_prac/src/turtlebot3_coppeliasim' with build type 'ament_cmake'
+[0.375s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anaase_linux/RM_prac/src/turtlebot3_coppeliasim'
+[0.375s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.375s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.378s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/anaase_linux/RM_prac/src/turtlebot3_dqn' with build type 'ament_python'
+[0.379s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_dqn', 'ament_prefix_path')
+[0.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/share/turtlebot3_dqn/hook/ament_prefix_path.ps1'
+[0.379s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/share/turtlebot3_dqn/hook/ament_prefix_path.dsv'
+[0.380s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/share/turtlebot3_dqn/hook/ament_prefix_path.sh'
+[0.380s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.380s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.383s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anaase_linux/RM_prac/src/upv_maps_pkg' with build type 'ament_cmake'
+[0.383s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anaase_linux/RM_prac/src/upv_maps_pkg'
+[0.383s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.383s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/bringup_turtlebot3_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/bringup_turtlebot3_pkg -- -j22 -l22
+[0.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/intro_ros_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/intro_ros_pkg -- -j22 -l22
+[0.401s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/kinematic_control_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/kinematic_control_pkg -- -j22 -l22
+[0.405s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/maintenance_mode_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/maintenance_mode_pkg -- -j22 -l22
+[0.408s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/navigation_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/navigation_pkg -- -j22 -l22
+[0.412s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/pure_pursuit_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/pure_pursuit_pkg -- -j22 -l22
+[0.415s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/ros2_vfh': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/ros2_vfh -- -j22 -l22
+[0.419s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/slam_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/slam_pkg -- -j22 -l22
+[0.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/transformations_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/transformations_pkg -- -j22 -l22
+[0.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/turtlebot3_coppeliasim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/turtlebot3_coppeliasim -- -j22 -l22
+[0.672s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/anaase_linux/RM_prac/src/turtlebot3_dqn'
+[0.673s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.673s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.684s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/upv_maps_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/upv_maps_pkg -- -j22 -l22
+[0.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/navigation_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/navigation_pkg -- -j22 -l22
+[0.703s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/navigation_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/navigation_pkg
+[0.704s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/turtlebot3_coppeliasim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/turtlebot3_coppeliasim -- -j22 -l22
+[0.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/turtlebot3_coppeliasim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/turtlebot3_coppeliasim
+[0.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/slam_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/slam_pkg -- -j22 -l22
+[0.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/slam_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/slam_pkg
+[0.711s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/maintenance_mode_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/maintenance_mode_pkg -- -j22 -l22
+[0.714s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/maintenance_mode_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/maintenance_mode_pkg
+[0.714s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/bringup_turtlebot3_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/bringup_turtlebot3_pkg -- -j22 -l22
+[0.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/bringup_turtlebot3_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/bringup_turtlebot3_pkg
+[0.719s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/intro_ros_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/intro_ros_pkg -- -j22 -l22
+[0.724s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/intro_ros_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/intro_ros_pkg
+[0.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/transformations_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/transformations_pkg -- -j22 -l22
+[0.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/transformations_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/transformations_pkg
+[0.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/ros2_vfh' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/ros2_vfh -- -j22 -l22
+[0.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/ros2_vfh': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/ros2_vfh
+[0.768s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/upv_maps_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/upv_maps_pkg -- -j22 -l22
+[0.770s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigation_pkg)
+[0.771s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/upv_maps_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/upv_maps_pkg
+[0.771s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/navigation_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/navigation_pkg
+[0.773s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/navigation_pkg' for CMake module files
+[0.774s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/navigation_pkg' for CMake config files
+[0.774s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation_pkg', 'cmake_prefix_path')
+[0.774s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/hook/cmake_prefix_path.ps1'
+[0.774s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/hook/cmake_prefix_path.dsv'
+[0.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/hook/cmake_prefix_path.sh'
+[0.775s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/navigation_pkg/bin'
+[0.775s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/navigation_pkg/lib/pkgconfig/navigation_pkg.pc'
+[0.776s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/navigation_pkg/lib/python3.10/site-packages'
+[0.776s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/navigation_pkg/bin'
+[0.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/package.ps1'
+[0.777s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/package.dsv'
+[0.778s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/package.sh'
+[0.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/package.bash'
+[0.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/package.zsh'
+[0.780s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/navigation_pkg/share/colcon-core/packages/navigation_pkg)
+[0.781s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navigation_pkg)
+[0.781s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/navigation_pkg' for CMake module files
+[0.781s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/navigation_pkg' for CMake config files
+[0.781s] Level 1:colcon.colcon_core.shell:create_environment_hook('navigation_pkg', 'cmake_prefix_path')
+[0.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/hook/cmake_prefix_path.ps1'
+[0.781s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/hook/cmake_prefix_path.dsv'
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/hook/cmake_prefix_path.sh'
+[0.782s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/navigation_pkg/bin'
+[0.782s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/navigation_pkg/lib/pkgconfig/navigation_pkg.pc'
+[0.782s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/navigation_pkg/lib/python3.10/site-packages'
+[0.782s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/navigation_pkg/bin'
+[0.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/package.ps1'
+[0.783s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/package.dsv'
+[0.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/package.sh'
+[0.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/package.bash'
+[0.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/navigation_pkg/share/navigation_pkg/package.zsh'
+[0.784s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/navigation_pkg/share/colcon-core/packages/navigation_pkg)
+[0.784s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_pkg)
+[0.785s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/slam_pkg' for CMake module files
+[0.786s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/slam_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/slam_pkg
+[0.786s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/slam_pkg' for CMake config files
+[0.786s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_pkg', 'cmake_prefix_path')
+[0.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/hook/cmake_prefix_path.ps1'
+[0.787s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/hook/cmake_prefix_path.dsv'
+[0.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/hook/cmake_prefix_path.sh'
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/slam_pkg/lib'
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/slam_pkg/bin'
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/slam_pkg/lib/pkgconfig/slam_pkg.pc'
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/slam_pkg/lib/python3.10/site-packages'
+[0.788s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/slam_pkg/bin'
+[0.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/package.ps1'
+[0.789s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/package.dsv'
+[0.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/package.sh'
+[0.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/package.bash'
+[0.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/package.zsh'
+[0.790s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/slam_pkg/share/colcon-core/packages/slam_pkg)
+[0.790s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_pkg)
+[0.790s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/slam_pkg' for CMake module files
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/slam_pkg' for CMake config files
+[0.791s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_pkg', 'cmake_prefix_path')
+[0.791s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/hook/cmake_prefix_path.ps1'
+[0.791s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/hook/cmake_prefix_path.dsv'
+[0.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/hook/cmake_prefix_path.sh'
+[0.792s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/slam_pkg/lib'
+[0.792s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/slam_pkg/bin'
+[0.792s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/slam_pkg/lib/pkgconfig/slam_pkg.pc'
+[0.792s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/slam_pkg/lib/python3.10/site-packages'
+[0.793s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/slam_pkg/bin'
+[0.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/package.ps1'
+[0.793s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/package.dsv'
+[0.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/package.sh'
+[0.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/package.bash'
+[0.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/slam_pkg/share/slam_pkg/package.zsh'
+[0.794s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/slam_pkg/share/colcon-core/packages/slam_pkg)
+[0.796s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(maintenance_mode_pkg)
+[0.796s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg' for CMake module files
+[0.798s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/maintenance_mode_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/maintenance_mode_pkg
+[0.798s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg' for CMake config files
+[0.799s] Level 1:colcon.colcon_core.shell:create_environment_hook('maintenance_mode_pkg', 'cmake_prefix_path')
+[0.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/hook/cmake_prefix_path.ps1'
+[0.799s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/hook/cmake_prefix_path.dsv'
+[0.800s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/hook/cmake_prefix_path.sh'
+[0.800s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/lib'
+[0.800s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/bin'
+[0.800s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/lib/pkgconfig/maintenance_mode_pkg.pc'
+[0.800s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/lib/python3.10/site-packages'
+[0.800s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/bin'
+[0.801s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/package.ps1'
+[0.801s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/package.dsv'
+[0.801s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/package.sh'
+[0.802s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/package.bash'
+[0.802s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/package.zsh'
+[0.802s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/colcon-core/packages/maintenance_mode_pkg)
+[0.802s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(maintenance_mode_pkg)
+[0.802s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg' for CMake module files
+[0.803s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg' for CMake config files
+[0.803s] Level 1:colcon.colcon_core.shell:create_environment_hook('maintenance_mode_pkg', 'cmake_prefix_path')
+[0.803s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/hook/cmake_prefix_path.ps1'
+[0.803s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/hook/cmake_prefix_path.dsv'
+[0.803s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/hook/cmake_prefix_path.sh'
+[0.804s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/lib'
+[0.804s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/bin'
+[0.804s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/lib/pkgconfig/maintenance_mode_pkg.pc'
+[0.804s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/lib/python3.10/site-packages'
+[0.804s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/bin'
+[0.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/package.ps1'
+[0.805s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/package.dsv'
+[0.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/package.sh'
+[0.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/package.bash'
+[0.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/maintenance_mode_pkg/package.zsh'
+[0.806s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/maintenance_mode_pkg/share/colcon-core/packages/maintenance_mode_pkg)
+[0.806s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bringup_turtlebot3_pkg)
+[0.807s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg' for CMake module files
+[0.807s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/bringup_turtlebot3_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/bringup_turtlebot3_pkg
+[0.808s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg' for CMake config files
+[0.808s] Level 1:colcon.colcon_core.shell:create_environment_hook('bringup_turtlebot3_pkg', 'cmake_prefix_path')
+[0.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/hook/cmake_prefix_path.ps1'
+[0.808s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/hook/cmake_prefix_path.dsv'
+[0.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/hook/cmake_prefix_path.sh'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/lib'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/bin'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/lib/pkgconfig/bringup_turtlebot3_pkg.pc'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/lib/python3.10/site-packages'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/bin'
+[0.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/package.ps1'
+[0.810s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/package.dsv'
+[0.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/package.sh'
+[0.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/package.bash'
+[0.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/package.zsh'
+[0.810s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/colcon-core/packages/bringup_turtlebot3_pkg)
+[0.811s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bringup_turtlebot3_pkg)
+[0.811s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg' for CMake module files
+[0.811s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg' for CMake config files
+[0.811s] Level 1:colcon.colcon_core.shell:create_environment_hook('bringup_turtlebot3_pkg', 'cmake_prefix_path')
+[0.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/hook/cmake_prefix_path.ps1'
+[0.812s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/hook/cmake_prefix_path.dsv'
+[0.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/hook/cmake_prefix_path.sh'
+[0.812s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/lib'
+[0.812s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/bin'
+[0.812s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/lib/pkgconfig/bringup_turtlebot3_pkg.pc'
+[0.813s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/lib/python3.10/site-packages'
+[0.813s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/bin'
+[0.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/package.ps1'
+[0.813s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/package.dsv'
+[0.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/package.sh'
+[0.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/package.bash'
+[0.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/package.zsh'
+[0.814s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/bringup_turtlebot3_pkg/share/colcon-core/packages/bringup_turtlebot3_pkg)
+[0.815s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(intro_ros_pkg)
+[0.815s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/intro_ros_pkg' for CMake module files
+[0.816s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/intro_ros_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/intro_ros_pkg
+[0.820s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/intro_ros_pkg' for CMake config files
+[0.820s] Level 1:colcon.colcon_core.shell:create_environment_hook('intro_ros_pkg', 'cmake_prefix_path')
+[0.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/hook/cmake_prefix_path.ps1'
+[0.820s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/hook/cmake_prefix_path.dsv'
+[0.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/hook/cmake_prefix_path.sh'
+[0.821s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/intro_ros_pkg/lib'
+[0.821s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/intro_ros_pkg/bin'
+[0.821s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/intro_ros_pkg/lib/pkgconfig/intro_ros_pkg.pc'
+[0.821s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/intro_ros_pkg/lib/python3.10/site-packages'
+[0.821s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/intro_ros_pkg/bin'
+[0.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/package.ps1'
+[0.822s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/package.dsv'
+[0.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/package.sh'
+[0.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/package.bash'
+[0.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/package.zsh'
+[0.823s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/colcon-core/packages/intro_ros_pkg)
+[0.823s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(intro_ros_pkg)
+[0.823s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/intro_ros_pkg' for CMake module files
+[0.824s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/intro_ros_pkg' for CMake config files
+[0.824s] Level 1:colcon.colcon_core.shell:create_environment_hook('intro_ros_pkg', 'cmake_prefix_path')
+[0.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/hook/cmake_prefix_path.ps1'
+[0.824s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/hook/cmake_prefix_path.dsv'
+[0.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/hook/cmake_prefix_path.sh'
+[0.825s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/intro_ros_pkg/lib'
+[0.825s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/intro_ros_pkg/bin'
+[0.825s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/intro_ros_pkg/lib/pkgconfig/intro_ros_pkg.pc'
+[0.825s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/intro_ros_pkg/lib/python3.10/site-packages'
+[0.825s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/intro_ros_pkg/bin'
+[0.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/package.ps1'
+[0.825s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/package.dsv'
+[0.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/package.sh'
+[0.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/package.bash'
+[0.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/intro_ros_pkg/package.zsh'
+[0.827s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/intro_ros_pkg/share/colcon-core/packages/intro_ros_pkg)
+[0.828s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_coppeliasim)
+[0.829s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim' for CMake module files
+[0.829s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/turtlebot3_coppeliasim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/turtlebot3_coppeliasim
+[0.829s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim' for CMake config files
+[0.829s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_coppeliasim', 'cmake_prefix_path')
+[0.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/hook/cmake_prefix_path.ps1'
+[0.830s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/hook/cmake_prefix_path.dsv'
+[0.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/hook/cmake_prefix_path.sh'
+[0.830s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/bin'
+[0.830s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/lib/pkgconfig/turtlebot3_coppeliasim.pc'
+[0.830s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/lib/python3.10/site-packages'
+[0.831s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/bin'
+[0.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.ps1'
+[0.831s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.dsv'
+[0.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.sh'
+[0.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.bash'
+[0.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.zsh'
+[0.832s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/colcon-core/packages/turtlebot3_coppeliasim)
+[0.833s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_coppeliasim)
+[0.833s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim' for CMake module files
+[0.833s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim' for CMake config files
+[0.833s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_coppeliasim', 'cmake_prefix_path')
+[0.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/hook/cmake_prefix_path.ps1'
+[0.833s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/hook/cmake_prefix_path.dsv'
+[0.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/hook/cmake_prefix_path.sh'
+[0.834s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/bin'
+[0.834s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/lib/pkgconfig/turtlebot3_coppeliasim.pc'
+[0.834s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/lib/python3.10/site-packages'
+[0.834s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/bin'
+[0.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.ps1'
+[0.835s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.dsv'
+[0.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.sh'
+[0.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.bash'
+[0.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.zsh'
+[0.836s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/turtlebot3_coppeliasim/share/colcon-core/packages/turtlebot3_coppeliasim)
+[0.836s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(transformations_pkg)
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/transformations_pkg' for CMake module files
+[0.838s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/transformations_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/transformations_pkg
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/transformations_pkg' for CMake config files
+[0.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('transformations_pkg', 'cmake_prefix_path')
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/hook/cmake_prefix_path.ps1'
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/hook/cmake_prefix_path.dsv'
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/hook/cmake_prefix_path.sh'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/transformations_pkg/lib'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/transformations_pkg/bin'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/transformations_pkg/lib/pkgconfig/transformations_pkg.pc'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/transformations_pkg/lib/python3.10/site-packages'
+[0.840s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/transformations_pkg/bin'
+[0.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/package.ps1'
+[0.840s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/package.dsv'
+[0.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/package.sh'
+[0.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/package.bash'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/package.zsh'
+[0.841s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/transformations_pkg/share/colcon-core/packages/transformations_pkg)
+[0.841s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(transformations_pkg)
+[0.841s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/transformations_pkg' for CMake module files
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/transformations_pkg' for CMake config files
+[0.842s] Level 1:colcon.colcon_core.shell:create_environment_hook('transformations_pkg', 'cmake_prefix_path')
+[0.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/hook/cmake_prefix_path.ps1'
+[0.842s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/hook/cmake_prefix_path.dsv'
+[0.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/hook/cmake_prefix_path.sh'
+[0.843s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/transformations_pkg/lib'
+[0.843s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/transformations_pkg/bin'
+[0.843s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/transformations_pkg/lib/pkgconfig/transformations_pkg.pc'
+[0.843s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/transformations_pkg/lib/python3.10/site-packages'
+[0.843s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/transformations_pkg/bin'
+[0.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/package.ps1'
+[0.844s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/package.dsv'
+[0.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/package.sh'
+[0.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/package.bash'
+[0.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/transformations_pkg/share/transformations_pkg/package.zsh'
+[0.846s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/transformations_pkg/share/colcon-core/packages/transformations_pkg)
+[0.846s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_vfh)
+[0.847s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/ros2_vfh' for CMake module files
+[0.848s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/ros2_vfh' for CMake config files
+[0.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/ros2_vfh' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/ros2_vfh
+[0.849s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_vfh', 'cmake_prefix_path')
+[0.849s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/ros2_vfh/share/ros2_vfh/hook/cmake_prefix_path.ps1'
+[0.849s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/ros2_vfh/share/ros2_vfh/hook/cmake_prefix_path.dsv'
+[0.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/ros2_vfh/share/ros2_vfh/hook/cmake_prefix_path.sh'
+[0.851s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/ros2_vfh/lib'
+[0.851s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/ros2_vfh/bin'
+[0.851s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/ros2_vfh/lib/pkgconfig/ros2_vfh.pc'
+[0.851s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/ros2_vfh/lib/python3.10/site-packages'
+[0.851s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/ros2_vfh/bin'
+[0.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/ros2_vfh/share/ros2_vfh/package.ps1'
+[0.852s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/ros2_vfh/share/ros2_vfh/package.dsv'
+[0.852s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/ros2_vfh/share/ros2_vfh/package.sh'
+[0.852s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/ros2_vfh/share/ros2_vfh/package.bash'
+[0.853s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/ros2_vfh/share/ros2_vfh/package.zsh'
+[0.853s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/ros2_vfh/share/colcon-core/packages/ros2_vfh)
+[0.853s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_vfh)
+[0.853s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/ros2_vfh' for CMake module files
+[0.854s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/ros2_vfh' for CMake config files
+[0.854s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_vfh', 'cmake_prefix_path')
+[0.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/ros2_vfh/share/ros2_vfh/hook/cmake_prefix_path.ps1'
+[0.854s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/ros2_vfh/share/ros2_vfh/hook/cmake_prefix_path.dsv'
+[0.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/ros2_vfh/share/ros2_vfh/hook/cmake_prefix_path.sh'
+[0.855s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/ros2_vfh/lib'
+[0.855s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/ros2_vfh/bin'
+[0.855s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/ros2_vfh/lib/pkgconfig/ros2_vfh.pc'
+[0.855s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/ros2_vfh/lib/python3.10/site-packages'
+[0.855s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/ros2_vfh/bin'
+[0.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/ros2_vfh/share/ros2_vfh/package.ps1'
+[0.856s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/ros2_vfh/share/ros2_vfh/package.dsv'
+[0.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/ros2_vfh/share/ros2_vfh/package.sh'
+[0.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/ros2_vfh/share/ros2_vfh/package.bash'
+[0.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/ros2_vfh/share/ros2_vfh/package.zsh'
+[0.856s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/ros2_vfh/share/colcon-core/packages/ros2_vfh)
+[0.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/pure_pursuit_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/pure_pursuit_pkg -- -j22 -l22
+[0.861s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/pure_pursuit_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/pure_pursuit_pkg
+[0.861s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(upv_maps_pkg)
+[0.862s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/upv_maps_pkg' for CMake module files
+[0.862s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/upv_maps_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/upv_maps_pkg
+[0.862s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/upv_maps_pkg' for CMake config files
+[0.862s] Level 1:colcon.colcon_core.shell:create_environment_hook('upv_maps_pkg', 'cmake_prefix_path')
+[0.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/hook/cmake_prefix_path.ps1'
+[0.863s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/hook/cmake_prefix_path.dsv'
+[0.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/hook/cmake_prefix_path.sh'
+[0.863s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/upv_maps_pkg/bin'
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/upv_maps_pkg/lib/pkgconfig/upv_maps_pkg.pc'
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/upv_maps_pkg/lib/python3.10/site-packages'
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/upv_maps_pkg/bin'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/package.ps1'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/package.dsv'
+[0.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/package.sh'
+[0.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/package.bash'
+[0.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/package.zsh'
+[0.865s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/colcon-core/packages/upv_maps_pkg)
+[0.866s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(upv_maps_pkg)
+[0.866s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/upv_maps_pkg' for CMake module files
+[0.866s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/upv_maps_pkg' for CMake config files
+[0.866s] Level 1:colcon.colcon_core.shell:create_environment_hook('upv_maps_pkg', 'cmake_prefix_path')
+[0.866s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/hook/cmake_prefix_path.ps1'
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/hook/cmake_prefix_path.dsv'
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/hook/cmake_prefix_path.sh'
+[0.867s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/upv_maps_pkg/bin'
+[0.867s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/upv_maps_pkg/lib/pkgconfig/upv_maps_pkg.pc'
+[0.867s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/upv_maps_pkg/lib/python3.10/site-packages'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/upv_maps_pkg/bin'
+[0.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/package.ps1'
+[0.868s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/package.dsv'
+[0.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/package.sh'
+[0.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/package.bash'
+[0.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/upv_maps_pkg/package.zsh'
+[0.869s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/upv_maps_pkg/share/colcon-core/packages/upv_maps_pkg)
+[0.870s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/kinematic_control_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --build /home/anaase_linux/RM_prac/build/kinematic_control_pkg -- -j22 -l22
+[0.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/kinematic_control_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/kinematic_control_pkg
+[0.930s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pure_pursuit_pkg)
+[0.930s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg' for CMake module files
+[0.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/pure_pursuit_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/pure_pursuit_pkg
+[0.935s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg' for CMake config files
+[0.935s] Level 1:colcon.colcon_core.shell:create_environment_hook('pure_pursuit_pkg', 'cmake_prefix_path')
+[0.935s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/hook/cmake_prefix_path.ps1'
+[0.936s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/hook/cmake_prefix_path.dsv'
+[0.936s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/hook/cmake_prefix_path.sh'
+[0.936s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/lib'
+[0.937s] Level 1:colcon.colcon_core.shell:create_environment_hook('pure_pursuit_pkg', 'ld_library_path_lib')
+[0.937s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/hook/ld_library_path_lib.ps1'
+[0.937s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/hook/ld_library_path_lib.dsv'
+[0.937s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/hook/ld_library_path_lib.sh'
+[0.938s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/bin'
+[0.938s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/lib/pkgconfig/pure_pursuit_pkg.pc'
+[0.938s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/lib/python3.10/site-packages'
+[0.938s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/bin'
+[0.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/package.ps1'
+[0.939s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/package.dsv'
+[0.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/package.sh'
+[0.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/package.bash'
+[0.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/package.zsh'
+[0.940s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/colcon-core/packages/pure_pursuit_pkg)
+[0.940s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pure_pursuit_pkg)
+[0.940s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg' for CMake module files
+[0.941s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg' for CMake config files
+[0.941s] Level 1:colcon.colcon_core.shell:create_environment_hook('pure_pursuit_pkg', 'cmake_prefix_path')
+[0.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/hook/cmake_prefix_path.ps1'
+[0.941s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/hook/cmake_prefix_path.dsv'
+[0.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/hook/cmake_prefix_path.sh'
+[0.942s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/lib'
+[0.942s] Level 1:colcon.colcon_core.shell:create_environment_hook('pure_pursuit_pkg', 'ld_library_path_lib')
+[0.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/hook/ld_library_path_lib.ps1'
+[0.942s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/hook/ld_library_path_lib.dsv'
+[0.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/hook/ld_library_path_lib.sh'
+[0.943s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/bin'
+[0.943s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/lib/pkgconfig/pure_pursuit_pkg.pc'
+[0.943s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/lib/python3.10/site-packages'
+[0.943s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/bin'
+[0.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/package.ps1'
+[0.944s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/package.dsv'
+[0.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/package.sh'
+[0.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/package.bash'
+[0.945s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/package.zsh'
+[0.945s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/pure_pursuit_pkg/share/colcon-core/packages/pure_pursuit_pkg)
+[0.946s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kinematic_control_pkg)
+[0.946s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/kinematic_control_pkg' for CMake module files
+[0.947s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/kinematic_control_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anaase_linux/RM_prac/install/turtlebot3_dqn:/opt/ros/humble /usr/bin/cmake --install /home/anaase_linux/RM_prac/build/kinematic_control_pkg
+[0.947s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/kinematic_control_pkg' for CMake config files
+[0.947s] Level 1:colcon.colcon_core.shell:create_environment_hook('kinematic_control_pkg', 'cmake_prefix_path')
+[0.947s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/hook/cmake_prefix_path.ps1'
+[0.948s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/hook/cmake_prefix_path.dsv'
+[0.949s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/hook/cmake_prefix_path.sh'
+[0.949s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/lib'
+[0.949s] Level 1:colcon.colcon_core.shell:create_environment_hook('kinematic_control_pkg', 'ld_library_path_lib')
+[0.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/hook/ld_library_path_lib.ps1'
+[0.950s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/hook/ld_library_path_lib.dsv'
+[0.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/hook/ld_library_path_lib.sh'
+[0.951s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/bin'
+[0.951s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/lib/pkgconfig/kinematic_control_pkg.pc'
+[0.951s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/lib/python3.10/site-packages'
+[0.951s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/bin'
+[0.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/package.ps1'
+[0.952s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/package.dsv'
+[0.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/package.sh'
+[0.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/package.bash'
+[0.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/package.zsh'
+[0.953s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/colcon-core/packages/kinematic_control_pkg)
+[0.954s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kinematic_control_pkg)
+[0.954s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/kinematic_control_pkg' for CMake module files
+[0.954s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/kinematic_control_pkg' for CMake config files
+[0.955s] Level 1:colcon.colcon_core.shell:create_environment_hook('kinematic_control_pkg', 'cmake_prefix_path')
+[0.955s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/hook/cmake_prefix_path.ps1'
+[0.955s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/hook/cmake_prefix_path.dsv'
+[0.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/hook/cmake_prefix_path.sh'
+[0.956s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/lib'
+[0.956s] Level 1:colcon.colcon_core.shell:create_environment_hook('kinematic_control_pkg', 'ld_library_path_lib')
+[0.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/hook/ld_library_path_lib.ps1'
+[0.957s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/hook/ld_library_path_lib.dsv'
+[0.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/hook/ld_library_path_lib.sh'
+[0.957s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/bin'
+[0.957s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/lib/pkgconfig/kinematic_control_pkg.pc'
+[0.957s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/lib/python3.10/site-packages'
+[0.957s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/bin'
+[0.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/package.ps1'
+[0.958s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/package.dsv'
+[0.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/package.sh'
+[0.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/package.bash'
+[0.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/package.zsh'
+[0.959s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/kinematic_control_pkg/share/colcon-core/packages/kinematic_control_pkg)
+[1.020s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/build/turtlebot3_dqn': PYTHONPATH=/home/anaase_linux/RM_prac/build/turtlebot3_dqn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/anaase_linux/RM_prac/build/turtlebot3_dqn/build
+[1.306s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/build/turtlebot3_dqn' returned '0': PYTHONPATH=/home/anaase_linux/RM_prac/build/turtlebot3_dqn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/anaase_linux/RM_prac/build/turtlebot3_dqn/build
+[1.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anaase_linux/RM_prac/src/turtlebot3_dqn': PYTHONPATH=/home/anaase_linux/RM_prac/build/turtlebot3_dqn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_dqn build --build-base /home/anaase_linux/RM_prac/build/turtlebot3_dqn/build install --record /home/anaase_linux/RM_prac/build/turtlebot3_dqn/install.log --single-version-externally-managed install_data --force
+[1.517s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_dqn' for CMake module files
+[1.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anaase_linux/RM_prac/src/turtlebot3_dqn' returned '0': PYTHONPATH=/home/anaase_linux/RM_prac/build/turtlebot3_dqn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot3_dqn build --build-base /home/anaase_linux/RM_prac/build/turtlebot3_dqn/build install --record /home/anaase_linux/RM_prac/build/turtlebot3_dqn/install.log --single-version-externally-managed install_data --force
+[1.518s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_dqn' for CMake config files
+[1.519s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib'
+[1.519s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/bin'
+[1.519s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/pkgconfig/turtlebot3_dqn.pc'
+[1.519s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/lib/python3.10/site-packages'
+[1.519s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_dqn', 'pythonpath')
+[1.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/share/turtlebot3_dqn/hook/pythonpath.ps1'
+[1.520s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/share/turtlebot3_dqn/hook/pythonpath.dsv'
+[1.520s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/share/turtlebot3_dqn/hook/pythonpath.sh'
+[1.520s] Level 1:colcon.colcon_core.environment:checking '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/bin'
+[1.520s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_dqn)
+[1.520s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/share/turtlebot3_dqn/package.ps1'
+[1.521s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/share/turtlebot3_dqn/package.dsv'
+[1.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/share/turtlebot3_dqn/package.sh'
+[1.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/share/turtlebot3_dqn/package.bash'
+[1.522s] INFO:colcon.colcon_core.shell:Creating package script '/home/anaase_linux/RM_prac/install/turtlebot3_dqn/share/turtlebot3_dqn/package.zsh'
+[1.522s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anaase_linux/RM_prac/install/turtlebot3_dqn/share/colcon-core/packages/turtlebot3_dqn)
+[1.522s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.523s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.523s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.523s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.566s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[1.566s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.566s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.566s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.567s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[1.567s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.567s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/anaase_linux/RM_prac/install/local_setup.ps1'
+[1.568s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/anaase_linux/RM_prac/install/_local_setup_util_ps1.py'
+[1.568s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/anaase_linux/RM_prac/install/setup.ps1'
+[1.569s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/anaase_linux/RM_prac/install/local_setup.sh'
+[1.570s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/anaase_linux/RM_prac/install/_local_setup_util_sh.py'
+[1.570s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/anaase_linux/RM_prac/install/setup.sh'
+[1.571s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/anaase_linux/RM_prac/install/local_setup.bash'
+[1.571s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/anaase_linux/RM_prac/install/setup.bash'
+[1.572s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/anaase_linux/RM_prac/install/local_setup.zsh'
+[1.572s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/anaase_linux/RM_prac/install/setup.zsh'
