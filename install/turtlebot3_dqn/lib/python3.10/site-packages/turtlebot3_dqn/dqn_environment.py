@@ -58,6 +58,7 @@ class RLEnvironment(Node):
         self.goal_angle = 0.0
         self.goal_distance = 1.0
         self.init_goal_distance = 0.5
+        self.prev_goal_distance = 0.0
         self.scan_ranges = []
         self.front_ranges = []
         self.min_obstacle_distance = 10.0
@@ -262,20 +263,31 @@ class RLEnvironment(Node):
         return state
 
     def compute_directional_weights(self, relative_angles, max_weight=10.0):
-        power = 6
+
+        power = 4
+
         raw_weights = (numpy.cos(relative_angles))**power + 0.1
-        scaled_weights = raw_weights * (max_weight / numpy.max(raw_weights))
-        normalized_weights = scaled_weights / numpy.sum(scaled_weights)
+
+        scaled_weights = raw_weights * (
+            max_weight / numpy.max(raw_weights)
+        )
+
+        normalized_weights = (
+            scaled_weights / numpy.sum(scaled_weights)
+        )
+
         return normalized_weights
 
     def compute_weighted_obstacle_reward(self):
+
         if not self.front_ranges or not self.front_angles:
             return 0.0
 
         front_ranges = numpy.array(self.front_ranges)
         front_angles = numpy.array(self.front_angles)
 
-        valid_mask = front_ranges <= 0.5
+        valid_mask = front_ranges <= 0.6
+
         if not numpy.any(valid_mask):
             return 0.0
 
@@ -285,48 +297,76 @@ class RLEnvironment(Node):
         relative_angles = numpy.unwrap(front_angles)
         relative_angles[relative_angles > numpy.pi] -= 2 * numpy.pi
 
-        weights = self.compute_directional_weights(relative_angles, max_weight=10.0)
+        weights = self.compute_directional_weights(relative_angles)
 
-        safe_dists = numpy.clip(front_ranges - 0.25, 1e-2, 3.5)
-        decay = numpy.exp(-3.0 * safe_dists)
+        safe_dists = numpy.clip(
+            front_ranges - 0.25,
+            1e-2,
+            3.5
+        )
+
+        decay = numpy.exp(-2.0 * safe_dists)
 
         weighted_decay = numpy.dot(weights, decay)
 
-        reward = - (1.0 + 4.0 * weighted_decay)
+        reward = -2.0 * weighted_decay
 
         return reward
 
     def calculate_reward(self):
-        yaw_reward = 1 - (2 * abs(self.goal_angle) / math.pi)
-        obstacle_reward = self.compute_weighted_obstacle_reward()
-        orientation_reward = 1 - abs(self.goal_angle) / math.pi
-        # Premio por acercarse a la plaza
-        distance_reward = (
-            self.prev_goal_distance - self.goal_distance) * 10.0
 
-        # Guardar distancia actual para la siguiente iteración
+        yaw_reward = (
+            1.0 - (2.0 * abs(self.goal_angle) / math.pi)
+        )
+
+        orientation_reward = (
+            1.0 - abs(self.goal_angle) / math.pi
+        )
+
+        obstacle_reward = (
+            self.compute_weighted_obstacle_reward()
+        )
+
+        distance_delta = (
+            self.prev_goal_distance -
+            self.goal_distance
+        )
+
+        distance_reward = distance_delta * 50.0
+
         self.prev_goal_distance = self.goal_distance
-        
-        #Penalización temporal
-        time_penalty= -0.01
+
+        time_penalty = -0.01
 
         reward = (
-            yaw_reward
-            + obstacle_reward
-            + distance_reward
+            distance_reward
+            + 0.5 * yaw_reward
             + 0.5 * orientation_reward
+            + obstacle_reward
             + time_penalty
         )
-        
+
+        if distance_delta > 0:
+            reward += 0.5
+        elif abs(self.goal_angle) > 1.5:
+            reward -= 2.0
+
+        elif distance_delta < 0:
+            reward -= 1.0
+
         print(
-            f"dist={self.goal_distance:.2f}, "
+            f"dist={self.goal_distance:.2f} "
+            f"delta={distance_delta:.3f} "
+            f"angle={self.goal_angle:.2f} "
+            f"obs={obstacle_reward:.2f} "
             f"reward={reward:.2f}"
         )
 
         if self.succeed:
-            reward = 100.0
+            reward = 200.0
+
         elif self.fail:
-            reward = -50.0
+            reward = -100.0
 
         return reward
 
@@ -334,11 +374,11 @@ class RLEnvironment(Node):
         action = request.action
         if ROS_DISTRO == 'humble':
             msg = Twist()
-            msg.linear.x = 0.2
+            msg.linear.x = 0.1
             msg.angular.z = self.angular_vel[action]
         else:
             msg = TwistStamped()
-            msg.twist.linear.x = 0.2
+            msg.twist.linear.x = 0.1
             msg.twist.angular.z = self.angular_vel[action]
 
         self.cmd_vel_pub.publish(msg)
