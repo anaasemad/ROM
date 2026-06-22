@@ -315,9 +315,9 @@ class RLEnvironment(Node):
 
     def calculate_reward(self):
 
-        yaw_reward = (
+        '''yaw_reward = (
             1.0 - (2.0 * abs(self.goal_angle) / math.pi)
-        )
+        )'''
 
         orientation_reward = (
             1.0 - abs(self.goal_angle) / math.pi
@@ -340,7 +340,6 @@ class RLEnvironment(Node):
 
         reward = (
             distance_reward
-            + 0.5 * yaw_reward
             + 0.5 * orientation_reward
             + obstacle_reward
             + time_penalty

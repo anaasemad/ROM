@@ -165,10 +165,10 @@ class DQNAgent(Node):
         self.model = self.create_qnetwork()
         self.use_pretrained_model = bool(model_file)
         self.load_episode = 0
-        self.model_dir_path = os.path.join(
-            os.path.dirname(os.path.dirname(os.path.realpath(__file__))),
-            'saved_model'
+        self.model_dir_path = os.path.expanduser(
+            '~/RM_prac/src/turtlebot3_dqn/saved_model' #cambiada
         )
+
         model_path = os.path.join(
             self.model_dir_path,
             model_file
