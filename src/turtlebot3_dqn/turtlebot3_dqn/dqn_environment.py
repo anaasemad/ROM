@@ -43,10 +43,16 @@ class RLEnvironment(Node):
 
     def __init__(self):
         super().__init__('rl_environment')
-        self.goal_pose_x = 0.0
-        self.goal_pose_y = 0.0
+        # Objetivo fijo de la tarea tipo parking/meta.
+        # Cambia estos dos valores si mueves la plaza/meta en CoppeliaSim.
+        self.fixed_goal_x = -2.125
+        self.fixed_goal_y = -1.725
+
+        self.goal_pose_x = self.fixed_goal_x
+        self.goal_pose_y = self.fixed_goal_y
         self.robot_pose_x = 0.0
         self.robot_pose_y = 0.0
+        self.robot_pose_theta = 0.0
 
         self.action_size = 5
         self.max_step = 800
@@ -59,9 +65,17 @@ class RLEnvironment(Node):
         self.goal_distance = 1.0
         self.init_goal_distance = 0.5
         self.prev_goal_distance = 0.0
-        self.scan_ranges = []
+        # La red DQN espera SIEMPRE 26 entradas:
+        # distancia + angulo + 24 medidas laser reducidas.
+        self.reduced_scan_size = 24
+        self.max_laser_distance = 3.5
+
+        self.scan_ranges = [self.max_laser_distance] * self.reduced_scan_size
         self.front_ranges = []
+        self.front_angles = []
+        self.front_distance = self.max_laser_distance
         self.min_obstacle_distance = 10.0
+        self.front_min_obstacle_distance = 10.0
         self.is_front_min_actual_front = False
 
         self.local_step = 0
@@ -121,19 +135,30 @@ class RLEnvironment(Node):
             self.reset_environment_callback
         )
 
+    def set_fixed_goal(self):
+        """Mantiene la meta fija aunque CoppeliaSim devuelva otra pose."""
+        self.goal_pose_x = self.fixed_goal_x
+        self.goal_pose_y = self.fixed_goal_y
+
     def make_environment_callback(self, request, response):
         self.get_logger().info('Make environment called - Forzando Parking Fijo')
-        
-        # Nos saltamos la llamada externa que bloquea el nodo
-        self.goal_pose_x = -2.125
-        self.goal_pose_y = -1.725
-        
+
+        # Nos saltamos la llamada externa que bloquea el nodo y fijamos la meta.
+        self.set_fixed_goal()
+
         self.get_logger().info(
             'goal initialized at [%f, %f]' % (self.goal_pose_x, self.goal_pose_y)
         )
         return response
 
     def reset_environment_callback(self, request, response):
+        # Garantiza que cada episodio usa la misma meta fija.
+        self.set_fixed_goal()
+        self.local_step = 0
+        self.done = False
+        self.succeed = False
+        self.fail = False
+
         state = self.calculate_state()
         self.init_goal_distance = state[0]
         self.prev_goal_distance = self.init_goal_distance
@@ -147,9 +172,9 @@ class RLEnvironment(Node):
         future = self.task_succeed_client.call_async(Goal.Request())
         rclpy.spin_until_future_complete(self, future)
         if future.result() is not None:
-            response = future.result()
-            self.goal_pose_x = response.pose_x
-            self.goal_pose_y = response.pose_y
+            _ = future.result()
+            # El servicio resetea la simulacion, pero nuestra tarea mantiene meta fija.
+            self.set_fixed_goal()
             self.get_logger().info('service for task succeed finished')
         else:
             self.get_logger().error('task succeed service call failed')
@@ -160,12 +185,36 @@ class RLEnvironment(Node):
         future = self.task_failed_client.call_async(Goal.Request())
         rclpy.spin_until_future_complete(self, future)
         if future.result() is not None:
-            response = future.result()
-            self.goal_pose_x = response.pose_x
-            self.goal_pose_y = response.pose_y
+            _ = future.result()
+            # El servicio resetea la simulacion, pero nuestra tarea mantiene meta fija.
+            self.set_fixed_goal()
             self.get_logger().info('service for task failed finished')
         else:
             self.get_logger().error('task failed service call failed')
+
+    def normalize_angle(self, angle):
+        """Normaliza un angulo a [-pi, pi]."""
+        while angle > math.pi:
+            angle -= 2.0 * math.pi
+        while angle < -math.pi:
+            angle += 2.0 * math.pi
+        return angle
+
+    def get_reduced_scan(self):
+        """Devuelve exactamente 24 medidas laser para que state_size=26 sea coherente."""
+        if not self.scan_ranges:
+            return [self.max_laser_distance] * self.reduced_scan_size
+
+        scan_array = numpy.array(self.scan_ranges, dtype=float)
+        scan_array = numpy.clip(scan_array, 0.0, self.max_laser_distance)
+
+        indices = numpy.linspace(
+            0,
+            len(scan_array) - 1,
+            self.reduced_scan_size,
+            dtype=int
+        )
+        return [float(scan_array[i]) for i in indices]
 
     def scan_sub_callback(self, scan):
         self.scan_ranges = []
@@ -176,24 +225,32 @@ class RLEnvironment(Node):
         angle_min = scan.angle_min
         angle_increment = scan.angle_increment
 
+        if num_of_lidar_rays == 0:
+            self.scan_ranges = [self.max_laser_distance] * self.reduced_scan_size
+            self.min_obstacle_distance = 10.0
+            self.front_min_obstacle_distance = 10.0
+            return
+
         self.front_distance = scan.ranges[0]
 
         for i in range(num_of_lidar_rays):
-            angle = angle_min + i * angle_increment
+            angle = self.normalize_angle(angle_min + i * angle_increment)
             distance = scan.ranges[i]
 
-            if distance == float('Inf'):
-                distance = 3.5
+            if distance == float('Inf') or math.isinf(distance):
+                distance = self.max_laser_distance
             elif numpy.isnan(distance):
-                distance = 0.0
+                distance = self.max_laser_distance
 
+            distance = float(numpy.clip(distance, 0.0, self.max_laser_distance))
             self.scan_ranges.append(distance)
 
-            if (0 <= angle <= math.pi/2) or (3*math.pi/2 <= angle <= 2*math.pi):
+            # Zona frontal robusta: funciona si el laser viene en [-pi, pi] o en [0, 2pi].
+            if abs(angle) <= math.pi / 2.0:
                 self.front_ranges.append(distance)
                 self.front_angles.append(angle)
 
-        self.min_obstacle_distance = min(self.scan_ranges)
+        self.min_obstacle_distance = min(self.scan_ranges) if self.scan_ranges else 10.0
         self.front_min_obstacle_distance = min(self.front_ranges) if self.front_ranges else 10.0
 
     def odom_sub_callback(self, msg):
@@ -208,26 +265,27 @@ class RLEnvironment(Node):
             self.goal_pose_y - self.robot_pose_y,
             self.goal_pose_x - self.robot_pose_x)
 
-        goal_angle = path_theta - self.robot_pose_theta
-        if goal_angle > math.pi:
-            goal_angle -= 2 * math.pi
-
-        elif goal_angle < -math.pi:
-            goal_angle += 2 * math.pi
+        goal_angle = self.normalize_angle(path_theta - self.robot_pose_theta)
 
         self.goal_distance = goal_distance
         self.goal_angle = goal_angle
 
     def calculate_state(self):
         state = []
-        orientation_error=abs(self.goal_angle)
         state.append(float(self.goal_distance))
         state.append(float(self.goal_angle))
-        for var in self.front_ranges:
-            state.append(float(var))
+        state.extend(self.get_reduced_scan())
+
+        # Seguridad: el agente tiene self.state_size=26. Esto debe cumplirse siempre.
+        if len(state) != 26:
+            self.get_logger().error(f'Invalid state size: {len(state)}. Expected 26.')
+
         self.local_step += 1
 
-        if (self.goal_distance < 0.20 and orientation_error <0.2):
+        # Exito: para que el entrenamiento sea viable, llegar a la meta basta.
+        # Si se quisiera parking con orientacion final, habria que comparar contra un goal_theta fijo,
+        # no contra goal_angle, porque cerca de la meta ese angulo es inestable.
+        if self.goal_distance < 0.20:
             self.get_logger().info('Goal Reached')
             self.succeed = True
             self.done = True
@@ -249,7 +307,7 @@ class RLEnvironment(Node):
             self.local_step = 0
             self.call_task_failed()
 
-        if self.local_step == self.max_step:
+        if self.local_step >= self.max_step:
             self.get_logger().info('Time out!')
             self.fail = True
             self.done = True
@@ -294,8 +352,7 @@ class RLEnvironment(Node):
         front_ranges = front_ranges[valid_mask]
         front_angles = front_angles[valid_mask]
 
-        relative_angles = numpy.unwrap(front_angles)
-        relative_angles[relative_angles > numpy.pi] -= 2 * numpy.pi
+        relative_angles = front_angles
 
         weights = self.compute_directional_weights(relative_angles)
 
@@ -405,7 +462,10 @@ class RLEnvironment(Node):
             self.cmd_vel_pub.publish(Twist())
         else:
             self.cmd_vel_pub.publish(TwistStamped())
-        self.destroy_timer(self.stop_cmd_vel_timer)
+
+        if self.stop_cmd_vel_timer is not None:
+            self.destroy_timer(self.stop_cmd_vel_timer)
+            self.stop_cmd_vel_timer = None
 
     def euler_from_quaternion(self, quat):
         x = quat.x

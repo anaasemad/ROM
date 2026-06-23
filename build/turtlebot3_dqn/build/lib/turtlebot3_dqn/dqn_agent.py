@@ -105,9 +105,13 @@ def _create_dqn_metric_class():
         def result(self):
             return self.loss / self.episode_step
 
-        def reset_states(self):
+        def reset_state(self):
             self.loss.assign(0)
             self.episode_step.assign(0)
+
+        def reset_states(self):
+            # Compatibilidad con codigo antiguo que llama reset_states().
+            self.reset_state()
 
     return DQNMetric
 
@@ -120,7 +124,7 @@ class DQNAgent(Node):
         self.declare_parameter('max_training_episodes', 1000)
         self.declare_parameter('model_file', '')
         self.declare_parameter('use_gpu', False)
-        self.declare_parameter('verbose', True)
+        self.declare_parameter('verbose', False)
         self.max_training_episodes = self.get_parameter(
             'max_training_episodes'
         ).get_parameter_value().integer_value
@@ -165,9 +169,11 @@ class DQNAgent(Node):
         self.model = self.create_qnetwork()
         self.use_pretrained_model = bool(model_file)
         self.load_episode = 0
-        self.model_dir_path = os.path.expanduser(
-            '~/RM_prac/src/turtlebot3_dqn/saved_model' #cambiada
+        self.model_dir_path =  os.path.expanduser(
+            '~/RM_prac/src/turtlebot3_dqn/saved_model'
         )
+        # Necesario: si la carpeta no existe, model.save(...) fallara cada 100 episodios.
+        os.makedirs(self.model_dir_path, exist_ok=True)
 
         model_path = os.path.join(
             self.model_dir_path,
